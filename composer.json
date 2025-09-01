@@ -1,0 +1,19 @@
+{
+    "name": "sheeeenn/php-light",
+    "description": "A lightweight PHP MVC framework with the essential features for modern web apps.",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Source\\": "source/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Justin Sheen"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
