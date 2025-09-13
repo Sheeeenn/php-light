@@ -4,9 +4,27 @@
 namespace Source;
 
 class Route {
-    public static function Links(array $link) {
+    public static function Links(array $links) {
 
-        return $_SERVER['REQUEST_URI'];
+        $url = $_SERVER['REQUEST_URI'];
+
+        if ($url !== "/") {
+
+            $url = rtrim($url, "/");
+
+        }
+
+        foreach ($links as $link) {
+
+            if($url == $link[0]) {
+
+                echo "Is There!";
+                break;
+            }
+
+        }
+
+        return;
     }
 }
 
