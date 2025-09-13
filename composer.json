@@ -6,7 +6,9 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "Source\\": "source/"
+            "Source\\": "source/",
+            "Route\\": "route/",
+            "Migrations\\": "migrations/"
         }
     },
     "authors": [

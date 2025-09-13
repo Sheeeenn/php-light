@@ -1,4 +1,5 @@
-<html>
-    <head><title>SHEEN</title></head>
-    <body><h1> TEST PHP-LIGHT </h1></body>
-</html>
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+require __DIR__ . '/../route/links.php';
