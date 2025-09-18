@@ -1,12 +1,14 @@
 <?php 
 
-function render($name) {
+function render($name, $data = []) {
 
-    $path = __DIR__ . "/../app/views/" . $name . ".php";
+    $pathnlight = __DIR__ . "/../app/views/" . $name . ".php";
 
-    if(file_exists($path)) {
+    if(file_exists($pathnlight)) {
 
-        include(__DIR__ . "/../app/views/" . $name . ".php");
+        extract($data);
+
+        include($pathnlight);
 
     } else {
 

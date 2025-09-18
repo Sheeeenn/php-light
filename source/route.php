@@ -21,13 +21,17 @@ class Route {
                 
                 $location = $link[1];
 
-                try {
+                if (is_string($location)) { 
 
-                    Controllers::$location();
+                    if (method_exists(Controllers::class, $location)) {
+    
+                        Controllers::$location();
 
-                } catch (\Throwable $th) {
+                    } else {
 
-                    echo "No controller named '" . $location . "' was found.";
+                        echo "No controller named '" . $location ."' was found." ;
+
+                    }
 
                 }
 
