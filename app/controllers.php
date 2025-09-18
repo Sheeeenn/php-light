@@ -11,7 +11,7 @@ class Controllers {
             "items" => ["gun", "knife"]
         ];
 
-        return render("phplight", $data);
+        return render("phplight",$data);
 
     }
 }
