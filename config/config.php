@@ -1,0 +1,11 @@
+<?php 
+
+return [
+    'Name' => "php-light",
+    'Host' => "127.0.0.1",
+    'Port' => 3306,
+    'Username' => "root",
+    'Password' => ""
+];
+
+?>

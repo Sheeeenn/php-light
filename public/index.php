@@ -6,3 +6,5 @@ require __DIR__ . '/../app/links.php';
 
 //TEST ONLY
 require __DIR__ . '/../app/models.php';
+
+$test = new User();
